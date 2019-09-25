@@ -1,8 +1,7 @@
 wp2moodle--moodle
 =================
 
-This is the Moodle-end of a two-part plugin that allows users to authenticate within wordpress and open a Moodle site. To get the Wordpress-end plugin, check this git: https://github.com/frumbert/wp2moodle--wordpress-
-
+This is the Moodle-end of a two-part plugin that allows users to authenticate within wordpress and open a Moodle site. To get the Wordpress-end plugin, check this git: https://github.com/nikita-e/wp2moodle-wordpress
 Data is encrypted (using aes-256-cbc via openssl) at the Wordpress end and handed over a standard http GET request. Only the minimum required information is sent in order to create a Moodle user record. The user is automatically created if not present at the Moodle end, and then authenticated, and (optionally) enrolled in a Cohort, a Group, or both.
 
 Requirements
@@ -17,7 +16,7 @@ http://wp2moodle.coursesuite.ninja/
 
 How to install this plugin
 ---------------------
-Note, this plugin must exist in a folder named "wp2moodle" - rename the zip file or folder before you upload it (preferably use something like `cd moodle/auth/ && git pull https://github.com/frumbert/wp2moodle-moodle wp2moodle` if you have git tools on your server).
+Note, this plugin must exist in a folder named "wp2moodle" - rename the zip file or folder before you upload it (preferably use something like `cd moodle/auth/ && git pull https://github.com/nikita-e/wp2moodle-moodle wp2moodle` if you have git tools on your server).
 
 1. Upload/extract this to your moodle/auth folder (should be called "~/auth/wp2moodle/", where ~ is your Moodle root)
 2. Activate the plugin in the administration / authentication section
